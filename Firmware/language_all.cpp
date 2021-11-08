@@ -2168,6 +2168,13 @@ const char * const MSG_PINDA_PREHEAT_LANG_TABLE[LANG_NUM] PROGMEM = {
 	MSG_PINDA_PREHEAT_DE
 };
 
+const char MSG_PLACE_STEEL_SHEET_EN[] PROGMEM = "Please place steel sheet on heatbed.";
+const char MSG_PLACE_STEEL_SHEET_CZ[] PROGMEM = "Umistete prosim tiskovy plat na heatbed";
+const char * const MSG_PLACE_STEEL_SHEET_LANG_TABLE[LANG_NUM] PROGMEM = {
+	MSG_PLACE_STEEL_SHEET_EN,
+	MSG_PLACE_STEEL_SHEET_CZ
+};
+
 const char MSG_PLANNER_BUFFER_BYTES_EN[] PROGMEM = "  PlannerBufferBytes: ";
 const char * const MSG_PLANNER_BUFFER_BYTES_LANG_TABLE[1] PROGMEM = {
 	MSG_PLANNER_BUFFER_BYTES_EN
@@ -2384,6 +2391,12 @@ const char * const MSG_REFRESH_LANG_TABLE[1] PROGMEM = {
 	MSG_REFRESH_EN
 };
 
+const char MSG_REMOVE_STEEL_SHEET_EN[] PROGMEM = "Please remove steel sheet from heatbed.";
+const char MSG_REMOVE_STEEL_SHEET_CZ[] PROGMEM = "Odstrante tiskovy plat z heatbed prosim.";
+const char * const MSG_REMOVE_STEEL_SHEET_LANG_TABLE[LANG_NUM] PROGMEM = {
+	MSG_REMOVE_STEEL_SHEET_EN,
+	MSG_REMOVE_STEEL_SHEET_CZ
+};
 const char MSG_RESEND_EN[] PROGMEM = "Resend: ";
 const char * const MSG_RESEND_LANG_TABLE[1] PROGMEM = {
 	MSG_RESEND_EN
@@ -3228,6 +3241,13 @@ const char * const MSG_STATS_TOTALPRINTTIME_LANG_TABLE[LANG_NUM] PROGMEM = {
 	MSG_STATS_TOTALPRINTTIME_ES,
 	MSG_STATS_TOTALPRINTTIME_PL,
 	MSG_STATS_TOTALPRINTTIME_DE
+};
+
+const char MSG_STEEL_SHEET_CHECK_EN[] PROGMEM = "Is steel sheet on heatbed?";
+const char MSG_STEEL_SHEET_CHECK_CZ[] PROGMEM = "Je tiskovy plat na heatbed?";
+const char * const MSG_STEEL_SHEET_CHECK_LANG_TABLE[LANG_NUM] PROGMEM = {
+	MSG_STEEL_SHEET_CHECK_EN,
+	MSG_STEEL_SHEET_CHECK_CZ
 };
 
 const char MSG_STEPPER_TOO_HIGH_EN[] PROGMEM = "Steprate too high: ";
