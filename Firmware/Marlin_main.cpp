@@ -2276,6 +2276,8 @@ bool gcode_M45(bool onlyZ) {
 			if (result >= 0) {
 				sample_z();
 			}
+      lcd_update_enable(true);
+			lcd_update(2);
 			lcd_bed_calibration_show_result(result, point_too_far_mask);
 			if (result >= 0) {
 				// Calibration valid, the machine should be able to print. Advise the user to run the V2Calibration.gcode.
