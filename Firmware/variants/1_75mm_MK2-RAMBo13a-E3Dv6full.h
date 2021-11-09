@@ -45,6 +45,13 @@ const bool X_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 const bool Y_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 
+// Direction inverting
+#define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
+#define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
+#define INVERT_Z_DIR false    // for Mendel set to false, for Orca set to true
+#define INVERT_E0_DIR true    // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E1_DIR true    // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E2_DIR true    // for direct drive extruder v9 set to true, for geared extruder set to false                   
 // Home position
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS -2.2
@@ -99,7 +106,7 @@ EXTRUDER SETTINGS
 #endif
 #define HEATER_1_MAXTEMP 305
 #define HEATER_2_MAXTEMP 305
-#define BED_MAXTEMP 125
+#define BED_MAXTEMP 150
 
 #if defined(E3D_PT100_EXTRUDER_WITH_AMP) || defined(E3D_PT100_EXTRUDER_NO_AMP)
 // Define PID constants for extruder with PT100
@@ -114,7 +121,7 @@ EXTRUDER SETTINGS
 #endif
 
 // Extrude mintemp
-#define EXTRUDE_MINTEMP 175
+#define EXTRUDE_MINTEMP 130
 
 // Extruder cooling fans
 #define EXTRUDER_0_AUTO_FAN_PIN   8
@@ -178,8 +185,6 @@ ADDITIONAL FEATURES SETTINGS
 #endif
 
 // temperature runaway
-#define TEMP_MAX_CHECKED_BED 95.0
-
 #define TEMP_RUNAWAY_BED_HYSTERESIS 5
 #define TEMP_RUNAWAY_BED_TIMEOUT 360
 
